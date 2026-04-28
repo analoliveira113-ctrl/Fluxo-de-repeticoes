@@ -1,55 +1,61 @@
-// fluxoDeRepeticoes.js
+const menu = 2;
 
-// ===============================
-// MENU PRINCIPAL
-// ===============================
+    switch (menu) {
+      case 1: 
+      console.log("Exercício 1 selecionando. Executando...\n");
+      exercicio1(); 
+      break;
 
-function menu() {
-  let opcao;
+      case 2: 
+      console.log("Exercício 2 selecionando. Executando...\n");
+      exercicio2(); 
+      break;
 
-  do {
-    opcao = prompt(`
-===== MENU DE EXERCÍCIOS =====
-1 - Listar nomes (for...of)
-2 - Somar valores (for...of)
-3 - Exibir propriedades (for...in)
-4 - Contar propriedades de um objeto
-5 - Concatenar nomes (for...of)
-6 - Tipos de elementos (for...of)
-7 - Incrementar idades (for...in)
-8 - Objeto para array de strings
-9 - Contar valores únicos (Set + for...of)
-10 - Contar caracteres de uma frase
-0 - Sair
-==============================
-Escolha uma opção:
-`);
+      case 3: 
+      console.log("Exercício 3 selecionando. Executando...\n");
+      exercicio3(); 
+      break;
 
-    switch (opcao) {
-      case "1": exercicio1(); break;
-      case "2": exercicio2(); break;
-      case "3": exercicio3(); break;
-      case "4": exercicio4(); break;
-      case "5": exercicio5(); break;
-      case "6": exercicio6(); break;
-      case "7": exercicio7(); break;
-      case "8": exercicio8(); break;
-      case "9": exercicio9(); break;
-      case "10": exercicio10(); break;
-      case "0": console.log("Encerrando programa..."); break;
-      default: console.log("Opção inválida!");
-    }
+      case 4: 
+      console.log("Exercício 4 selecionando. Executando...\n");
+      exercicio4(); 
+      break;
 
-  } while (opcao !== "0");
+      case 5: 
+      console.log("Exercício 5 selecionando. Executando...\n");
+      exercicio5(); 
+      break;
+
+      case 6: 
+      console.log("Exercício 6 selecionando. Executando...\n");
+      exercicio6(); 
+      break;
+
+      case 7:
+      console.log("Exercício 7 selecionando. Executando...\n");
+      exercicio7(); 
+      break;
+
+      case 8: 
+      console.log("Exercício 8 selecionando. Executando...\n");
+      exercicio8(); 
+      break;
+
+      case 9: 
+      console.log("Exercício 9 selecionando. Executando...\n");
+      exercicio9(); 
+      break;
+
+      case 10: 
+      console.log("Exercício 10 selecionando. Executando...\n");
+      exercicio10(); 
+      break;
 }
-
-// ===============================
-// FÁCEIS
-// ===============================
+// FACIL //
 
 // 1. Listar nomes com for...of
 function exercicio1() {
-  const nomes = ["Ana", "Bruno", "Carlos", "Diana", "Eduardo"];
+  const nomes = ["Ana Laura", "Eloize", "Isabelly", "Kemmily", "Emily"];
   for (const nome of nomes) {
     console.log(nome);
   }
@@ -57,7 +63,7 @@ function exercicio1() {
 
 // 2. Somar valores com for...of
 function exercicio2() {
-  const numeros = [10, 20, 30, 40];
+  const numeros = [20, 30, 50, 70];
   let soma = 0;
 
   for (const num of numeros) {
@@ -70,9 +76,9 @@ function exercicio2() {
 // 3. Exibir propriedades com for...in
 function exercicio3() {
   const pessoa = {
-    nome: "João",
-    idade: 25,
-    cidade: "São Paulo"
+    nome: "Iris",
+    idade: 102,
+    cidade: "Espirito Santo"
   };
 
   for (const chave in pessoa) {
@@ -91,11 +97,7 @@ function exercicio4() {
 
   console.log("Total de propriedades:", count);
 }
-
-// ===============================
-// MÉDIOS
-// ===============================
-
+// MEDIO //
 // 5. Concatenar nomes
 function exercicio5() {
   const nomes = ["Ana", "Bruno", "Carlos"];
@@ -144,10 +146,7 @@ function exercicio8() {
   console.log(resultado);
 }
 
-// ===============================
-// DIFÍCEIS
-// ===============================
-
+// DICIL  //
 // 9. Valores únicos com Set
 function exercicio9() {
   const array = [1, 2, 2, 3, 4, 4, 5];
