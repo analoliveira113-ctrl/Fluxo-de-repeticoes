@@ -55,7 +55,7 @@ const menu = 2;
 
 // 1. Listar nomes com for...of
 function exercicio1() {
-  const nomes = ["Ana Laura", "Eloize", "Isabelly", "Kemmily", "Emily"];
+  const nomes = ["Ana Laura", "Caio", "Davi", "Kalebe", "Ísis"];
   for (const nome of nomes) {
     console.log(nome);
   }
@@ -63,7 +63,7 @@ function exercicio1() {
 
 // 2. Somar valores com for...of
 function exercicio2() {
-  const numeros = [20, 30, 50, 70];
+  const numeros = [10, 20, 30, 90];
   let soma = 0;
 
   for (const num of numeros) {
@@ -76,9 +76,9 @@ function exercicio2() {
 // 3. Exibir propriedades com for...in
 function exercicio3() {
   const pessoa = {
-    nome: "Iris",
+    nome: "Isis",
     idade: 102,
-    cidade: "Espirito Santo"
+    cidade: "Sorocaba"
   };
 
   for (const chave in pessoa) {
@@ -100,7 +100,7 @@ function exercicio4() {
 // MEDIO //
 // 5. Concatenar nomes
 function exercicio5() {
-  const nomes = ["Ana", "Bruno", "Carlos"];
+  const nomes = ["Ana", "Caio", "Júlia"];
   let resultado = "";
 
   for (const nome of nomes) {
@@ -123,8 +123,8 @@ function exercicio6() {
 function exercicio7() {
   const pessoas = {
     Ana: 20,
-    Bruno: 25,
-    Carlos: 30
+    Caio: 25,
+    Júlia: 30
   };
 
   for (const nome in pessoas) {
@@ -146,30 +146,5 @@ function exercicio8() {
   console.log(resultado);
 }
 
-// DICIL  //
-// 9. Valores únicos com Set
-function exercicio9() {
-  const array = [1, 2, 2, 3, 4, 4, 5];
-  const setUnico = new Set(array);
 
-  console.log("Valores únicos:", setUnico.size);
-}
 
-// 10. Contar caracteres de uma frase
-function exercicio10() {
-  const frase = prompt("Digite uma frase:");
-  const contagem = {};
-
-  for (const letra of frase) {
-    if (letra !== " ") {
-      contagem[letra] = (contagem[letra] || 0) + 1;
-    }
-  }
-
-  console.log(contagem);
-}
-
-// ===============================
-// INICIALIZAÇÃO
-// ===============================
-menu();
